@@ -2,9 +2,9 @@
 
 # 👋 Meet Polybot
 
-A close friend of the Vexbot, the Polybot API sends you nothing but polygons. With every request, our Polybot will send you up to 1,000 polygons from 3 sides (triangle) to 72 sides (a heptacontakaidigon!). Create dazzling patterns or use the random shapes to create the terrain of your next game.
+A close friend of the Vexbot, the Polybot API sends you nothing but polygons. With every request, our Polybot will send you up to 1,000 polygons from 3 sides (a triangle) to 72 sides (a heptacontakaidigon!). Create dazzling patterns or use the random shapes to create the terrain of your next game.
 
-A polygon, as you'll recall from your ol' geometry textbook—is a [connected plane of *n* line segments](https://en.wikipedia.org/wiki/Polygon), so if you send a request to:
+A polygon—as you'll recall from your ol' geometry textbook—is a [connected plane of *n* line segments](https://en.wikipedia.org/wiki/Polygon), so if you send a request to:
 
  `api.noopschallenge.com/polybot`
 
@@ -27,7 +27,7 @@ A polygon, as you'll recall from your ol' geometry textbook—is a [connected pl
 
 The API will return up to 1,000 polygons with a random number of sides between 3 to 72. You can specify the `count` of polygons returns, `min_sides` and `max_sides`, and the maximum `size` you'd like your polygons to be. Or you can let the Polybot decide!
 
-[See a preview](https://noops-challenge.github.io/polybot).
+Here is a [preview](https://noops-challenge.github.io/polybot) of the starter project.
 
 ## ⭓ What can you do?
 
@@ -54,7 +54,7 @@ What's next is up to you! Fork the challenge and share what you do on Twitter (#
 ## ✨ A few ideas
 There are millions of things you can do with the Polybot, but here are a few ideas to get you started:
 
-- **Name them**: Did you know there's a formula to go from henagon to bigon to triangle to tetracontadigon? Learn about it [here](https://en.wikipedia.org/wiki/List_of_polygons) and show us how yours works.
+- **Name them**: Did you know there's a formula to name polygons—all the way from henagon to bigon to tetracontadigon? Learn about it [here](https://en.wikipedia.org/wiki/List_of_polygons) and show us how yours works.
 - **Sort them**: It's a simple matter of geometry to calculate the area of a polygon. Wouldn't they look nice sorted from largest to smallest? How fast could your algorithm do it?
 - **Make them obstacles in your game**: The polygons would look mighty interesting as asteroids falling from the sky or as boulders your hero has to avoid.
 - **Add physics**: Generate 100 polygons and let them fall from the top of the screen. Would they fit together? Would they squish other polygons? How much volume do they have, and how much mass?
@@ -68,7 +68,7 @@ You can request up to 1,000 polygons, specify *max_sides*, *min_sides* and *size
 
 There's a single endpoint: `api.noopschallenge.com/polybot`
 
-The endpoint accepts 5 parameters, all optional:
+The endpoint accepts 6 parameters, all optional:
 
 - **count** *(optional, numeric)*: Between 1 and 1000. Number of polygons to return.
 - **size** *(optional, numeric)*: Between 10 and 100,000. Maximum size of polygons. Defaults to average of width + height.
@@ -148,6 +148,6 @@ Request a polygon within a bounding box:
 }
 ```
 
-Read the complete API documentation in [API.md](./API.md)
+Read the [complete API documentation](./API.md).
 
-More about Polybot here: https://noopschallenge.com/challenges/polybot
+More about Polybot on the challenge page at [noopschallenge.com](https://noopschallenge.com/challenges/polybot).
