@@ -25,7 +25,7 @@ A polygon—as you'll recall from your ol' geometry textbook—is a [connected p
 }
 ```
 
-The API will return up to 1,000 polygons with a random number of sides between 3 to 72. You can specify the `count` of polygons returns, `min_sides` and `max_sides`, and the maximum `size` you'd like your polygons to be. Or you can let the Polybot decide!
+The API will return up to 1,000 polygons with a random number of sides between 3 to 72. You can specify the `count` of polygons returns, `minSides` and `maxSides`, and the maximum `size` you'd like your polygons to be. Or you can let the Polybot decide!
 
 Here is a [preview](https://noops-challenge.github.io/polybot) of the starter project.
 
@@ -64,7 +64,7 @@ Have an idea of your own? Create an issue and we'll add it to the list!
 
 ## 🤖 API basics
 
-You can request up to 1,000 polygons, specify *max_sides*, *min_sides* and *size* for your polygons, and set maximum *x* and *y* boundaries.
+You can request up to 1,000 polygons, specify *maxSides*, *minSides* and *size* for your polygons, and set maximum *x* and *y* boundaries.
 
 There's a single endpoint: `api.noopschallenge.com/polybot`
 
@@ -72,8 +72,8 @@ The endpoint accepts 6 parameters, all optional:
 
 - **count** *(optional, numeric)*: Between 1 and 1000. Number of polygons to return.
 - **size** *(optional, numeric)*: Between 10 and 100,000. Maximum size of polygons. Defaults to average of width + height.
-- **min_sides** *(optional, numeric)*: Between 3 and 72. Minimum number of sides in the polygon.
-- **max_sides** *(optional, numeric)*: Between 3 and 72. Maximum number of sides in the polygon. To specify number of sides, set `min_sides` and `max_sides` to the same number.
+- **minSides** *(optional, numeric)*: Between 3 and 72. Minimum number of sides in the polygon.
+- **maxSides** *(optional, numeric)*: Between 3 and 72. Maximum number of sides in the polygon. To specify number of sides, set `minSides` and `maxSides` to the same number.
 - **width** *(optional, numeric)*: Between 10 and 100,000. Maximum width of returned points.
 - **height** *(optional, numeric)*: Between 10 and 100,000. Maximum height of returned points.
 
@@ -99,7 +99,7 @@ Example return for a five-sided polygon:
 
 Request a six-sided polygon:
 
-`GET https://api.noopschallenge.com/polybot?min_sides=6&max_sides=6`
+`GET https://api.noopschallenge.com/polybot?minSides=6&maxSides=6`
 
 ```
 {

@@ -37,8 +37,8 @@ function draw() {
     API: 'polybot',
     count: 300,
     size: appWidth/2,
-    min_sides: 4,
-    max_sides: 16,
+    minSides: 4,
+    maxSides: 16,
     width: appWidth,
     height: appHeight
   }, drawSet);
