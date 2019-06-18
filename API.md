@@ -26,7 +26,7 @@
 
 ### Specify minimum number of sides
 
-`GET https://api.noopschallenge.com/polybot?count=5&min_sides=4`
+`GET https://api.noopschallenge.com/polybot?count=5&minSides=4`
 
 `HTTP 200`
 
@@ -117,7 +117,7 @@
 
 ### Specify maximum number of sides
 
-`GET https://api.noopschallenge.com/polybot?count=5&max_sides=12`
+`GET https://api.noopschallenge.com/polybot?count=5&maxSides=12`
 
 `HTTP 200`
 
@@ -176,7 +176,7 @@
 
 ### Specify exact number of sides
 
-`GET https://api.noopschallenge.com/polybot?min_sides=6&max_sides=6`
+`GET https://api.noopschallenge.com/polybot?minSides=6&maxSides=6`
 
 `HTTP 200`
 
@@ -198,7 +198,7 @@
 
 ### Specify polygon size
 
-`GET https://api.noopschallenge.com/polybot?count=2&size=100&min_sides=6&max_sides=6`
+`GET https://api.noopschallenge.com/polybot?count=2&size=100&minSides=6&maxSides=6`
 
 `HTTP 200`
 
